@@ -1,0 +1,47 @@
+public class Book {
+    private String bookID;
+    private String title;
+    private Author author; // entity reference
+
+    public Book(String bookID, String title, Author author) {
+        this.bookID = bookID;
+        this.title = title;
+        this.author = author;
+    }
+
+    public Book() {
+    }
+
+    public String getID() {
+        return bookID;
+    }
+
+    public void setID(String bookID) {
+        this.bookID = bookID;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookID='" + bookID + '\'' +
+                ", title='" + title + '\'' +
+                ", author=" + author +
+                '}';
+    }
+}
