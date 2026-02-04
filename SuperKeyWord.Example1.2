@@ -1,0 +1,9 @@
+class Husky extends Dog {
+
+    int price = 1500;
+
+    void displayPrice() {
+        System.out.println("Dog's price: " + super.price); // refer to superclass's variable
+        System.out.println("Husky's price: " + price); // refer to subclass's variable
+    }
+}
